@@ -76,7 +76,7 @@ struct lock {
         char *lk_name;
         //spinlock 
         struct spinlock lk_lock; 
-        // wake channel 
+        // wait channel 
         struct wchan *lk_wchan;  
         //how many resources avaliable 
         volatile int lk_held;  
@@ -119,8 +119,10 @@ void lock_destroy(struct lock *);
 
 struct cv {
         char *cv_name;
-        // add what you need here
-        // (don't forget to mark things volatile as needed)
+        // wait channel 
+        struct wchan *cv_wchan;  
+        //how many resources avaliable 
+        
 };
 
 struct cv *cv_create(const char *name);
