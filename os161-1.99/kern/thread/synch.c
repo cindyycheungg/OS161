@@ -210,12 +210,16 @@ void lock_release(struct lock *lock){
 }
 
 bool lock_do_i_hold(struct lock *lock){
-    
-	//if the owner has not been set or if the owner is not the current thread then we don't own the lock 
-	if(lock->owner == NULL || lock->owner != curthread){
+
+	KASSERT(lock != NULL);
+
+	//if the lock has not been held and owner is not current thread
+	if(lock->owner == curthread && lock->lk_held != 0){
+		return true; 
+	}
+	else{
 		return false; 
 	}
-	return true; 
 }
 
 ////////////////////////////////////////////////////////////

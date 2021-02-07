@@ -35,6 +35,8 @@
 #include <thread.h>
 #include <current.h>
 #include <syscall.h>
+// include for A2 
+#include "opt-A2.h"
 
 
 /*
@@ -75,9 +77,7 @@
  * stack, starting at sp+16 to skip over the slots for the
  * registerized values, with copyin().
  */
-void
-syscall(struct trapframe *tf)
-{
+void syscall(struct trapframe *tf){
 	int callno;
 	int32_t retval;
 	int err;
@@ -131,7 +131,12 @@ syscall(struct trapframe *tf)
 	  break;
 #endif // UW
 
-	    /* Add stuff here */
+#if OPT_A2
+	// fork() function 
+	case SYS_fork:
+	  err = sys_fork(tf, &retval);
+	  break;
+#endif /* OPT_A2 */
  
 	default:
 	  kprintf("Unknown syscall %d\n", callno);
@@ -168,6 +173,7 @@ syscall(struct trapframe *tf)
 	KASSERT(curthread->t_iplhigh_count == 0);
 }
 
+#if OPT_A2
 /*
  * Enter user mode for a newly forked process.
  *
@@ -176,8 +182,25 @@ syscall(struct trapframe *tf)
  *
  * Thus, you can trash it and do things another way if you prefer.
  */
-void
-enter_forked_process(struct trapframe *tf)
-{
-	(void)tf;
+void enter_forked_process(void *tf, unsigned long returnValue){
+
+	struct trapframe copied_tf = *(struct trapframe *)tf; 
+
+	//set up return values for chilren 
+	copied_tf.tf_v0 = 0; 
+	copied_tf.tf_a3 = 0; 
+	copied_tf.tf_epc += 4; 
+
+	(void) returnValue; 
+	
+	//free the passed in tf pointer 
+	kfree(tf); 
+
+	mips_usermode(&copied_tf); 
 }
+
+#else 
+void enter_forked_process(struct trapframe *tf){
+	
+}
+#endif /* OPT_A2 */

@@ -50,11 +50,12 @@
 #include <vfs.h>
 #include <synch.h>
 #include <kern/fcntl.h>  
+#include "opt-A2.h"
 
 /*
  * The process for the kernel; this holds all the kernel-only threads.
  */
-struct proc *kproc;
+struct proc *kproc; 
 
 /*
  * Mechanism for making the kernel menu thread sleep while processes are running
@@ -69,15 +70,18 @@ static struct semaphore *proc_count_mutex;
 struct semaphore *no_proc_sem;   
 #endif  // UW
 
+#if OPT_A2 
+
+static volatile int global_pid; 
+struct lock *lock_for_pid;
+
+#endif
 
 
 /*
  * Create a proc structure.
  */
-static
-struct proc *
-proc_create(const char *name)
-{
+static struct proc * proc_create(const char *name){
 	struct proc *proc;
 
 	proc = kmalloc(sizeof(*proc));
@@ -103,15 +107,27 @@ proc_create(const char *name)
 	proc->console = NULL;
 #endif // UW
 
+#if OPT_A2
+	//create children 
+	proc->children = array_create();
+	
+	// assign PID to children 
+	lock_acquire(lock_for_pid); 
+		proc->pid = global_pid; 
+    global_pid++; 
+  lock_release(lock_for_pid); 
+
+	
+	
+#endif /* OPT_A2 */
+
 	return proc;
 }
 
 /*
  * Destroy a proc structure.
  */
-void
-proc_destroy(struct proc *proc)
-{
+void proc_destroy(struct proc *proc){
 	/*
          * note: some parts of the process structure, such as the address space,
          *  are destroyed in sys_exit, before we get here
@@ -183,16 +199,25 @@ proc_destroy(struct proc *proc)
 	}
 	V(proc_count_mutex);
 #endif // UW
-	
-
 }
 
 /*
  * Create the process structure for the kernel.
  */
-void
-proc_bootstrap(void)
-{
+void proc_bootstrap(void){
+
+#if OPT_A2
+	
+	//create the lock 
+	lock_for_pid = lock_create("lock_for_global_pid"); 
+
+	// initialize global pid counter 
+	lock_acquire(lock_for_pid); 
+		global_pid = 2; 
+	lock_release(lock_for_pid); 
+
+#endif /* OPT_A2 */
+
   kproc = proc_create("[kernel]");
   if (kproc == NULL) {
     panic("proc_create for kproc failed\n");
@@ -216,9 +241,7 @@ proc_bootstrap(void)
  * It will have no address space and will inherit the current
  * process's (that is, the kernel menu's) current directory.
  */
-struct proc *
-proc_create_runprogram(const char *name)
-{
+struct proc *proc_create_runprogram(const char *name){
 	struct proc *proc;
 	char *console_path;
 
@@ -278,9 +301,7 @@ proc_create_runprogram(const char *name)
  * Add a thread to a process. Either the thread or the process might
  * or might not be current.
  */
-int
-proc_addthread(struct proc *proc, struct thread *t)
-{
+int proc_addthread(struct proc *proc, struct thread *t){
 	int result;
 
 	KASSERT(t->t_proc == NULL);
@@ -299,9 +320,7 @@ proc_addthread(struct proc *proc, struct thread *t)
  * Remove a thread from its process. Either the thread or the process
  * might or might not be current.
  */
-void
-proc_remthread(struct thread *t)
-{
+void proc_remthread(struct thread *t){
 	struct proc *proc;
 	unsigned i, num;
 
@@ -329,9 +348,7 @@ proc_remthread(struct thread *t)
  * refcounted. If you implement multithreaded processes, make sure to
  * set up a refcount scheme or some other method to make this safe.
  */
-struct addrspace *
-curproc_getas(void)
-{
+struct addrspace *curproc_getas(void){
 	struct addrspace *as;
 #ifdef UW
         /* Until user processes are created, threads used in testing 
@@ -352,9 +369,7 @@ curproc_getas(void)
  * Change the address space of the current process, and return the old
  * one.
  */
-struct addrspace *
-curproc_setas(struct addrspace *newas)
-{
+struct addrspace *curproc_setas(struct addrspace *newas){
 	struct addrspace *oldas;
 	struct proc *proc = curproc;
 

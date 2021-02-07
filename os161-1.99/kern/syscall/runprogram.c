@@ -51,9 +51,7 @@
  *
  * Calls vfs_open on progname and thus may destroy it.
  */
-int
-runprogram(char *progname)
-{
+int runprogram(char *progname){
 	struct addrspace *as;
 	struct vnode *v;
 	vaddr_t entrypoint, stackptr;
@@ -86,7 +84,7 @@ runprogram(char *progname)
 		vfs_close(v);
 		return result;
 	}
-
+ 
 	/* Done with the file now. */
 	vfs_close(v);
 
@@ -105,4 +103,3 @@ runprogram(char *progname)
 	panic("enter_new_process returned\n");
 	return EINVAL;
 }
-

@@ -20,9 +20,7 @@
  * You will need to improve this implementation
  */
 
-int
-sys_write(int fdesc,userptr_t ubuf,unsigned int nbytes,int *retval)
-{
+int sys_write(int fdesc,userptr_t ubuf,unsigned int nbytes,int *retval){
   struct iovec iov;
   struct uio u;
   int res;
