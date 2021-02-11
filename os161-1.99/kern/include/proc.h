@@ -74,6 +74,13 @@ struct proc {
 	volatile int pid; 
 	struct proc *parent; 
 	struct array *children; //pointer to an array of children proc structures 
+	volatile bool isAlive; //if the process is fully alive 
+	//create exit code and exit status 
+	volatile int exitCode; 
+	struct cv *procCv; 
+	struct lock *procLock; 
+	//volatile int dyingStatus;
+
 
 #endif /* OPT_A2 */
 

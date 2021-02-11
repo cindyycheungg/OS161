@@ -110,23 +110,25 @@ static struct proc * proc_create(const char *name){
 #if OPT_A2
 	//create children 
 	proc->children = array_create();
+	proc->parent = NULL;
 	
-	// assign PID to children 
+	// assign PID to children and set that it is fully alive 
 	lock_acquire(lock_for_pid); 
 		proc->pid = global_pid; 
     global_pid++; 
+		proc->isAlive = true; 
   lock_release(lock_for_pid); 
 
-	
+	//create the lock and cv 
+	proc->procLock = lock_create("procLock"); 
+	proc->procCv = cv_create("procCv"); 
 	
 #endif /* OPT_A2 */
 
 	return proc;
 }
 
-/*
- * Destroy a proc structure.
- */
+//Destroy a proc structure.
 void proc_destroy(struct proc *proc){
 	/*
          * note: some parts of the process structure, such as the address space,
@@ -139,6 +141,40 @@ void proc_destroy(struct proc *proc){
 
 	KASSERT(proc != NULL);
 	KASSERT(proc != kproc);
+
+	#ifdef OPT_A2
+
+//iterate through my children, delete the dead ones and set alive ones parent to null pointer 
+	for(int i = 0; i < (int)array_num(proc->children); i++){
+		
+		bool canDestroy = false; 
+		struct proc * currentChild = ((struct proc *)array_get(proc->children, i)); 
+
+		//if child is not alive, delete the child
+		lock_acquire(currentChild->procLock);
+			if(currentChild->isAlive == false){
+				canDestroy = true;
+			}
+			
+			//if the child is alive, set the parent pointer of the child to null since we're kms
+			else if(currentChild->isAlive == true){
+				currentChild->parent = NULL;
+			}
+		lock_release(currentChild->procLock);
+		if(canDestroy == true){
+			proc_destroy(currentChild);
+		}
+	}
+	
+	//destroy current process lock and cv
+	lock_destroy(proc->procLock);
+	cv_destroy(proc->procCv);
+
+	//free child array 
+	array_setsize(proc->children, 0);
+	array_destroy(proc->children);
+
+#endif
 
 	/*
 	 * We don't take p_lock in here because we must have the only
