@@ -245,6 +245,9 @@ int sys_execv(userptr_t program, userptr_t args){
   size_t programNameSize = sizeof(char) * (strlen((const char *)program) + 1); 
   //allocate space in the kernel for the name to live 
   char* kernelProgram = kmalloc(programNameSize); 
+  if(kernelProgram == NULL){
+    return ENOMEM;
+  }
   int copyName = copyinstr(program, kernelProgram, programNameSize, NULL);
   // make sure that the copy is successful 
   if(copyName != 0){
@@ -295,6 +298,7 @@ int sys_execv(userptr_t program, userptr_t args){
   
   //Delete the old address space 
   as_destroy(old); 
+  kfree(kernelProgram);
 
 	//Call enter new process with address to the arguments on the stack, stack pointer, and program entry point 
   /* Warp to user mode. */
