@@ -16,12 +16,15 @@
 
 #include <mips/trapframe.h> 
 #include <synch.h>
+//additional includes for execv
+#include <vfs.h>
+#include <kern/fcntl.h>
 
 /* sys_fork() 
-  1. create process struct for childProc
-  2. proc_create_runprogram(…) to create - check for errors 
-  3. Create and copy the address space using as_copy() - check for errors 
-  4. Set address space that we copied to childProc process  
+  - create process struct for childProc
+  - proc_create_runprogram(…) to create - check for errors 
+  - create and copy the address space using as_copy() - check for errors 
+  - set address space that we copied to childProc process  
 */ 
 int sys_fork(struct trapframe *tf, int *retval){
 
@@ -177,23 +180,23 @@ void sys__exit(int exitcode) {
   struct addrspace *as;
   struct proc *p = curproc;
 
-    DEBUG(DB_SYSCALL,"Syscall: _exit(%d)\n",exitcode);
+  DEBUG(DB_SYSCALL,"Syscall: _exit(%d)\n",exitcode);
 
-    KASSERT(curproc->p_addrspace != NULL);
-    as_deactivate();
-    /*
-    * clear p_addrspace before calling as_destroy. Otherwise if
-    * as_destroy sleeps (which is quite possible) when we
-    * come back we'll be calling as_activate on a
-    * half-destroyed address space. This tends to be
-    * messily fatal.
-    */
-    as = curproc_setas(NULL);
-    as_destroy(as); 
+  KASSERT(curproc->p_addrspace != NULL);
+  as_deactivate();
+  /*
+  * clear p_addrspace before calling as_destroy. Otherwise if
+  * as_destroy sleeps (which is quite possible) when we
+  * come back we'll be calling as_activate on a
+  * half-destroyed address space. This tends to be
+  * messily fatal.
+  */
+  as = curproc_setas(NULL);
+  as_destroy(as); 
 
-    /* detach this thread from its process */
-    /* note: curproc cannot be used after this call */
-    proc_remthread(curthread);
+  /* detach this thread from its process */
+  /* note: curproc cannot be used after this call */
+  proc_remthread(curthread);
 
   //check if parent is alive
 
@@ -219,9 +222,91 @@ void sys__exit(int exitcode) {
   thread_exit();
   /* thread_exit() does not return, so we should never get here */
   panic("return from thread_exit in sys_exit\n");
+}
+
+/* sys_execv() - replaces currently executing program with a newly loaded program 
+  - count the number of arguments and copy them into the kernel 
+  - copy the program path from user space into kernel 
+*/
+int sys_execv(userptr_t program, userptr_t args){
+  struct addrspace *as;
+	struct vnode *v;
+	vaddr_t entrypoint, stackptr;
+	int result;
+
+  (void) args;
+
+  //copy the number of argumments and copy them into the kernel 
+
+  //copy program path from user space into kernel 
+  
+  //copy program name into kernel space 
+  //find size of program name 
+  size_t programNameSize = sizeof(char) * (strlen((const char *)program) + 1); 
+  //allocate space in the kernel for the name to live 
+  char* kernelProgram = kmalloc(programNameSize); 
+  int copyName = copyinstr(program, kernelProgram, programNameSize, NULL);
+  // make sure that the copy is successful 
+  if(copyName != 0){
+    return ENOMEM;
+  }
+
+  /* ============================================= copy from run_program ============================================= */
+	/* Open the file. */
+	result = vfs_open(kernelProgram, O_RDONLY, 0, &v);
+	if (result) {
+		return result;
+	}
+
+	/* We should be a new process. */
+	// KASSERT(curproc_getas() == NULL);
+
+	/* Create a new address space. */
+	as = as_create();
+	if (as == NULL) {
+		vfs_close(v);
+		return ENOMEM;
+	}
+
+	/* Switch to it and activate it. */
+  // set the old address space 
+	struct addrspace* old = curproc_setas(as);
+	as_activate();
+
+	/* Load the executable. */
+	result = load_elf(v, &entrypoint);
+	if (result) {
+		/* p_addrspace will go away when curproc is destroyed */
+		vfs_close(v);
+		return result;
+	}
+ 
+	/* Done with the file now. */
+	vfs_close(v);
+  /* ============================================= copy from run_program ============================================= */
+
+  //copy the arguments from the user space into the new addressspace 
+	/* Define the user stack in the address space */
+	result = as_define_stack(as, &stackptr);
+	if (result) {
+		/* p_addrspace will go away when curproc is destroyed */
+		return result;
+	}
+  
+  //Delete the old address space 
+  as_destroy(old); 
+
+	//Call enter new process with address to the arguments on the stack, stack pointer, and program entry point 
+  /* Warp to user mode. */
+	enter_new_process(0 /*argc*/, NULL /*userspace addr of argv*/, stackptr, entrypoint);
+	
+	/* enter_new_process does not return. */
+	panic("enter_new_process returned\n");
+	return EINVAL;
 
 }
-/*********************************************************OLD CODE PRE-A2*************************************************************/
+
+/* ============================================================ OLD CODE ============================================================================ */
 #else 
 
     /* this implementation of sys__exit does not do anything with the exit code */

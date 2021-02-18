@@ -142,9 +142,9 @@ void proc_destroy(struct proc *proc){
 	KASSERT(proc != NULL);
 	KASSERT(proc != kproc);
 
-	#ifdef OPT_A2
+#ifdef OPT_A2
 
-//iterate through my children, delete the dead ones and set alive ones parent to null pointer 
+	//iterate through my children, delete the dead ones and set alive ones parent to null pointer 
 	for(int i = 0; i < (int)array_num(proc->children); i++){
 		
 		bool canDestroy = false; 

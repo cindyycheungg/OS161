@@ -48,6 +48,7 @@ void syscall(struct trapframe *tf);
 #ifdef OPT_A2
 /* Helper for fork(). You write this. */
 void enter_forked_process(void *tf, unsigned long returnValue);
+/* ============================================================ OLD CODE ============================================================================ */
 #else 
 
 void enter_forked_process(struct trapframe *tf);
@@ -76,8 +77,10 @@ int sys___time(userptr_t user_seconds, userptr_t user_nanoseconds);
 
 //if statement for A2
 #if OPT_A2
-	// fork() declaration 
+	// sys_fork() declaration 
   int sys_fork(struct trapframe *tf, int* retval);
+	// sys_execv()
+	int sys_execv(userptr_t program, userptr_t args);
 
 #endif /* OPT_A2 */
 

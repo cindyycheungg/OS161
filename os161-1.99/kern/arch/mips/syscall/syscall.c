@@ -105,15 +105,11 @@ void syscall(struct trapframe *tf){
 		break;
 
 	    case SYS___time:
-		err = sys___time((userptr_t)tf->tf_a0,
-				 (userptr_t)tf->tf_a1);
+		err = sys___time((userptr_t)tf->tf_a0, (userptr_t)tf->tf_a1);
 		break;
 #ifdef UW
 	case SYS_write:
-	  err = sys_write((int)tf->tf_a0,
-			  (userptr_t)tf->tf_a1,
-			  (int)tf->tf_a2,
-			  (int *)(&retval));
+	  err = sys_write((int)tf->tf_a0, (userptr_t)tf->tf_a1, (int)tf->tf_a2, (int *)(&retval));
 	  break;
 	case SYS__exit:
 	  sys__exit((int)tf->tf_a0);
@@ -124,27 +120,27 @@ void syscall(struct trapframe *tf){
 	  err = sys_getpid((pid_t *)&retval);
 	  break;
 	case SYS_waitpid:
-	  err = sys_waitpid((pid_t)tf->tf_a0,
-			    (userptr_t)tf->tf_a1,
-			    (int)tf->tf_a2,
-			    (pid_t *)&retval);
+	  err = sys_waitpid((pid_t)tf->tf_a0, (userptr_t)tf->tf_a1, (int)tf->tf_a2, (pid_t *)&retval);
 	  break;
 #endif // UW
 
 #if OPT_A2
-	// fork() function 
+	// sys_fork() function 
 	case SYS_fork:
 	  err = sys_fork(tf, &retval);
 	  break;
+
+	// sys_execv() function 
+	case SYS_execv:
+		err = sys_execv((userptr_t)tf->tf_a0, (userptr_t)tf->tf_a1); // currently taking no args 
+		break; 
 #endif /* OPT_A2 */
- 
+
 	default:
 	  kprintf("Unknown syscall %d\n", callno);
 	  err = ENOSYS;
 	  break;
 	}
-
-
 	if (err) {
 		/*
 		 * Return the error code. This gets converted at
@@ -198,9 +194,8 @@ void enter_forked_process(void *tf, unsigned long returnValue){
 
 	mips_usermode(&copied_tf); 
 }
-
+/* ============================================================ OLD CODE ============================================================================ */
 #else 
 void enter_forked_process(struct trapframe *tf){
-	
 }
 #endif /* OPT_A2 */

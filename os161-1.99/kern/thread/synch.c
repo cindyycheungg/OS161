@@ -253,7 +253,7 @@ struct cv * cv_create(const char *name) {
 
 void cv_destroy(struct cv *cv){
 	
-    KASSERT(cv != NULL);
+  KASSERT(cv != NULL);
 
 	//destroy the wait channel 
 	wchan_destroy(cv->cv_wchan); 
