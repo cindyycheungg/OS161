@@ -414,9 +414,7 @@ mips_usermode(struct trapframe *tf)
  *
  * Works by creating an ersatz trapframe.
  */
-void
-enter_new_process(int argc, userptr_t argv, vaddr_t stack, vaddr_t entry)
-{
+void enter_new_process(int argc, userptr_t argv, vaddr_t stack, vaddr_t entry){
 	struct trapframe tf;
 
 	bzero(&tf, sizeof(tf));

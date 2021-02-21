@@ -226,21 +226,18 @@ void sys__exit(int exitcode) {
 
 /* sys_execv() - replaces currently executing program with a newly loaded program 
   - count the number of arguments and copy them into the kernel 
-  - copy the program path from user space into kernel 
+  - copy the program path from user space into kernel (DONE) - Thursday Feb 18th 
 */
-int sys_execv(userptr_t program, userptr_t args){
+int sys_execv(userptr_t program, userptr_t arguments){
   struct addrspace *as;
 	struct vnode *v;
 	vaddr_t entrypoint, stackptr;
 	int result;
+	int totalArgs = 0; 
 
-  (void) args;
+  // (void) arguments;  - storesd as a NULL terminated arrary of pointers to strings  copy individual strings from address space into the kernel 
 
-  //copy the number of argumments and copy them into the kernel 
-
-  //copy program path from user space into kernel 
-  
-  //copy program name into kernel space 
+  //copy program path from user space into kernel aka. copy program name into kernel space 
   //find size of program name 
   size_t programNameSize = sizeof(char) * (strlen((const char *)program) + 1); 
   //allocate space in the kernel for the name to live 
@@ -254,6 +251,52 @@ int sys_execv(userptr_t program, userptr_t args){
     return ENOMEM;
   }
 
+  /* 
+  First phase: 
+    - count the number of argumments and copy them from the existing address space of the current process into the kernel - ALLOCATE MEMORY FIRST 
+    - need to use copyin each of the pointers to string 
+    - allogcate memeory
+    - copyinst the actual strings 
+  */ 
+
+  // count number of arguments - checked that it's working 
+	char **args = (char **)arguments; 
+	int i = 0; 
+	while(args[i] != NULL){
+		totalArgs += 1;
+		i += 1; 
+	}
+	//kprintf(totalArgs); 
+
+	// copying individual strings into the kernel 
+	//allocate memory 
+	size_t argumentSize = sizeof(char *) * (totalArgs + 1); //remember to include null character 
+	char **kernelArgs = kmalloc(argumentSize); 
+	//verify that we can allocate memory 
+	if(kernelArgs == NULL){
+		return ENOMEM; 
+	}
+	userptr_t usrPrtToString = NULL; 
+	//start to copy each individual string 
+	for(int i = 0; i < totalArgs; i++){
+		//size of an individual string arg
+		size_t individualArgSize = sizeof(char) * (strlen((const char*)args[i]) + 1); 
+		//allocate memory for each individual string arg
+		kernelArgs[i] = kmalloc(individualArgSize); 
+		if(kernelArgs[i] == NULL){
+			return ENOMEM; 
+		}
+		usrPrtToString = (userptr_t)args[i];
+		int copyArgs = copyinstr(usrPrtToString, kernelArgs[i], individualArgSize, NULL);
+		// make sure that the copy is successful 
+		if(copyArgs != 0){
+			return ENOMEM; 
+		}
+		//kprintf(kernelArgs[i]); 
+	}
+	//set last elem to NULL 
+	kernelArgs[totalArgs] = NULL; 
+	
   /* ============================================= copy from run_program ============================================= */
 	/* Open the file. */
 	result = vfs_open(kernelProgram, O_RDONLY, 0, &v);
@@ -288,9 +331,12 @@ int sys_execv(userptr_t program, userptr_t args){
 	vfs_close(v);
   /* ============================================= copy from run_program ============================================= */
 
+  //need to push argumnts on to the stack - own version of as-define stack - creates user stack and populate it with the arguments 
+
   //copy the arguments from the user space into the new addressspace 
 	/* Define the user stack in the address space */
-	result = as_define_stack(as, &stackptr);
+  vaddr_t usrSpaceAddrArgv;
+	result = as_define_stack_new(as, &stackptr, kernelArgs, totalArgs, kernelProgram, &usrSpaceAddrArgv);
 	if (result) {
 		/* p_addrspace will go away when curproc is destroyed */
 		return result;
@@ -299,10 +345,17 @@ int sys_execv(userptr_t program, userptr_t args){
   //Delete the old address space 
   as_destroy(old); 
   kfree(kernelProgram);
+  //FREE THE MEMORY ALLOCATED FOR STRINGS FOR ARGS 
+  for(int i = 0; i <= totalArgs; i++){
+    kfree(kernelArgs[i]); 
+  }
+  kfree(kernelArgs); 
 
 	//Call enter new process with address to the arguments on the stack, stack pointer, and program entry point 
   /* Warp to user mode. */
-	enter_new_process(0 /*argc*/, NULL /*userspace addr of argv*/, stackptr, entrypoint);
+	//enter_new_process(0 /*argc*/, NULL /*userspace addr of argv*/, stackptr, entrypoint);
+
+  enter_new_process(totalArgs /*argc*/, (userptr_t)usrSpaceAddrArgv /*userspace addr of argv*/, stackptr, entrypoint);
 	
 	/* enter_new_process does not return. */
 	panic("enter_new_process returned\n");

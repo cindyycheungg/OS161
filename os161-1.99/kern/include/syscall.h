@@ -80,7 +80,7 @@ int sys___time(userptr_t user_seconds, userptr_t user_nanoseconds);
 	// sys_fork() declaration 
   int sys_fork(struct trapframe *tf, int* retval);
 	// sys_execv()
-	int sys_execv(userptr_t program, userptr_t args);
+	int sys_execv(userptr_t program, userptr_t arguments);
 
 #endif /* OPT_A2 */
 

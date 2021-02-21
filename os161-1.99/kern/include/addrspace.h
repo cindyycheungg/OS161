@@ -37,6 +37,8 @@
 
 #include <vm.h>
 
+#include "opt-A2.h"
+
 struct vnode;
 
 
@@ -108,6 +110,11 @@ int               as_prepare_load(struct addrspace *as);
 int               as_complete_load(struct addrspace *as);
 int               as_define_stack(struct addrspace *as, vaddr_t *initstackptr);
 
+#if OPT_A2
+
+int as_define_stack_new(struct addrspace *as, vaddr_t *initstackptr, char** kernelArgs, int totalArgs, char* kernelProgram, vaddr_t *usrSpaceAddrArgv);
+
+#endif /* OPT_A2 */
 
 /*
  * Functions in loadelf.c

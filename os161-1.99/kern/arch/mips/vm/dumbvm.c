@@ -38,6 +38,14 @@
 #include <addrspace.h>
 #include <vm.h>
 
+#include "opt-A2.h"
+
+#if OPT_A2
+
+#include <copyinout.h>
+
+#endif
+
 /*
  * Dumb MIPS-only "VM system" that is intended to only be just barely
  * enough to struggle off the ground.
@@ -342,18 +350,121 @@ as_complete_load(struct addrspace *as)
 	return 0;
 }
 
-int
-as_define_stack(struct addrspace *as, vaddr_t *stackptr)
-{
+int as_define_stack(struct addrspace *as, vaddr_t *stackptr){
 	KASSERT(as->as_stackpbase != 0);
 
 	*stackptr = USERSTACK;
 	return 0;
 }
 
-int
-as_copy(struct addrspace *old, struct addrspace **ret)
-{
+#if OPT_A2
+
+int as_define_stack_new(struct addrspace *as, vaddr_t *stackptr, char** kernelArgs, int totalArgs, char* kernelProgram, vaddr_t *usrSpaceAddrArgv){
+	
+	KASSERT(as->as_stackpbase != 0);
+
+	*stackptr = USERSTACK;
+
+	int totalArgSize = 0;
+	//find total size of all arguments not including NULL at the end 
+	for(int i = 0; i < totalArgs; i++){
+		totalArgSize += strlen(kernelArgs[i]) + 1; 
+	}
+	//include program name 
+	totalArgSize += strlen(kernelProgram) + 1; 
+	//round up the arguments to 8 
+	size_t roundedTotalArgSize = ROUNDUP(totalArgSize, 8); 
+	//starting address of the first char of what you wanna push on to userstack 
+	vaddr_t argStartingAddr = *stackptr - (vaddr_t)roundedTotalArgSize; 
+
+	//starting address for copying addresses
+	vaddr_t addressStartingAddr = *stackptr - (vaddr_t)roundedTotalArgSize; 
+	
+	//making array of vaddr_t 
+	vaddr_t *stackArgAddr = kmalloc((totalArgs + 1) * sizeof(vaddr_t)); 
+
+	//find size of program name 
+  size_t programNameSize = sizeof(char) * (strlen((const char *)kernelProgram) + 1); 
+	int copyProgOut = copyoutstr((const char *)kernelProgram, (userptr_t)argStartingAddr, programNameSize, NULL); 
+	if(copyProgOut != 0){
+		return ENOMEM; 
+	}
+	//add prog starting address into vaddr_t array 
+	stackArgAddr[0] = argStartingAddr; 
+	//increase argStartAddr cause you're going down  
+	argStartingAddr += programNameSize; 
+	
+	//copy arguments into userstack 
+	for(int i = 0; i < totalArgs; i++){
+		//find size of argument name
+		size_t argNameSize = sizeof(char) * (strlen((const char *)kernelArgs[i]) + 1); 
+		int copyArgOut = copyoutstr((const char *)kernelArgs[i], (userptr_t)argStartingAddr, argNameSize, NULL); 
+		if(copyArgOut != 0){
+			return ENOMEM; 
+		}
+		//add prog starting address into vaddr_t array 
+		stackArgAddr[i + 1] = argStartingAddr; 
+		//increase argStartAddr cause you're going down  
+		argStartingAddr += argNameSize; 
+	}
+
+	//pad with 0s if needed 
+	int zerosToPad = roundedTotalArgSize - totalArgSize; 
+	if(zerosToPad != 0){
+		int zeroSize = 1;
+		int zeroPointer = 0;  
+		for(int i = 0; i < zerosToPad; i++){
+			int copyZeros = copyout((void *)&zeroPointer, (userptr_t)argStartingAddr, (size_t)zeroSize); 
+			argStartingAddr += zeroSize; 
+			if(copyZeros != 0){
+				return ENOMEM; 
+			}
+		}	
+	}
+
+	//copy the addresses to the user stack 
+	// want to put program name at address mod 8
+	int totalAddressSize = (totalArgs + 2) * sizeof(vaddr_t); 
+	size_t roundedTotalAddressSize = ROUNDUP(totalAddressSize, 8); 
+	vaddr_t addrStart = addressStartingAddr - roundedTotalAddressSize; 
+
+	//set the userspace address of argv to return b/c we need it for enter_new_process
+	*usrSpaceAddrArgv = addrStart; 
+
+	size_t vaddrSize = sizeof(vaddr_t); 
+	
+	//copy address of program name in 
+	vaddr_t progAddress = stackArgAddr[0]; 
+	int copyProgNameAddress = copyout((void*)progAddress, (userptr_t)addrStart, vaddrSize); 
+	if(copyProgNameAddress != 0){
+		return ENOMEM; 
+	}
+	//increase addrStart 
+	addrStart += vaddrSize; 
+
+	for(int i = 0; i < totalArgs; i++){
+		vaddr_t argAddress = stackArgAddr[i + 1]; 
+		int copyArgAddress = copyout((void*)argAddress, (userptr_t)addrStart, vaddrSize); 
+		if(copyArgAddress != 0){
+			return ENOMEM; 
+		}
+		addrStart += vaddrSize; 
+	}
+
+	//put null at the last addrSize 
+	int nullPtr = 0; 
+	int copyNull = copyout((void *)&nullPtr, (userptr_t)addrStart, vaddrSize); 
+	
+	if(copyNull != 0){
+		return ENOMEM; 
+	}
+	return 0;
+}
+
+#endif /* OPT_A2 */
+
+
+int as_copy(struct addrspace *old, struct addrspace **ret){
 	struct addrspace *new;
 
 	new = as_create();

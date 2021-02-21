@@ -1,0 +1,3700 @@
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.424385280 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428063057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427269257 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425538617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425312537 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.427996417 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyyxyxy
+y
+Operation took 0.431088217 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425530697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425248737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427579217 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425492777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425510057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425553777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.427982737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425451377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425618737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425438737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425386377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu3: offline.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425433777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.427996937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425005537 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425526897 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427110737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427778897 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425426457 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425750417 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425708977 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425588777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425383977 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425573337 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.424973417 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428060577 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyyxyxy
+y
+Operation took 0.431278937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.427888017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425475097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425477697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425359097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425048617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425602657 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428165577 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.424695000 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427276297 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425069537 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425484377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427228657 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427319697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425273857 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu3: offline.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425373897 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428146497 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425462817 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427506097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425240097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425644337 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425859137 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425391977 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428096737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.426238057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425706697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428342017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425468297 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425883417 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428191617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425571417 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425827577 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427221617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425272777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425541857 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428276137 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+yyxyxyxyx
+x
+Operation took 0.432822617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.427948617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425156377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425423137 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.428053417 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.427906217 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425415897 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425458417 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425590777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425735777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425793697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyzyz
+zzxzx
+xxx
+Operation took 0.427136057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425634497 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425676857 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+yyyyy
+xxxzxzxz
+zz
+Operation took 0.472599737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425610337 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425442857 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425412657 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.424899017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzyzy
+yyxyx
+xxx
+Operation took 0.427868257 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425453737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.426004857 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425579697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425708377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425343617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425365257 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425216097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425506537 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425618937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425585937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425223577 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Cindy Cheung's system version 0 (ASST2 #38)
+
+3884k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: p uw-testbin/hogparty
+zzzzz
+xxxyxyxy
+yy
+Operation took 0.425147377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
