@@ -346,7 +346,7 @@ int sys_execv(userptr_t program, userptr_t arguments){
   as_destroy(old); 
   kfree(kernelProgram);
   //FREE THE MEMORY ALLOCATED FOR STRINGS FOR ARGS 
-  for(int i = 0; i <= totalArgs; i++){
+  for(int i = 0; i < totalArgs; i++){
     kfree(kernelArgs[i]); 
   }
   kfree(kernelArgs); 

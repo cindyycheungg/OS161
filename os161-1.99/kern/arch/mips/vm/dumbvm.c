@@ -429,13 +429,14 @@ int as_define_stack_new(struct addrspace *as, vaddr_t *stackptr, char** kernelAr
 	vaddr_t addrStart = addressStartingAddr - roundedTotalAddressSize; 
 
 	//set the userspace address of argv to return b/c we need it for enter_new_process
-	*usrSpaceAddrArgv = addrStart; 
+	*usrSpaceAddrArgv = addrStart;
+	*stackptr = addrStart;
 
 	size_t vaddrSize = sizeof(vaddr_t); 
 	
 	//copy address of program name in 
 	vaddr_t progAddress = stackArgAddr[0]; 
-	int copyProgNameAddress = copyout((void*)progAddress, (userptr_t)addrStart, vaddrSize); 
+	int copyProgNameAddress = copyout((void*) &progAddress, (userptr_t)addrStart, vaddrSize); 
 	if(copyProgNameAddress != 0){
 		return ENOMEM; 
 	}
@@ -444,7 +445,7 @@ int as_define_stack_new(struct addrspace *as, vaddr_t *stackptr, char** kernelAr
 
 	for(int i = 0; i < totalArgs; i++){
 		vaddr_t argAddress = stackArgAddr[i + 1]; 
-		int copyArgAddress = copyout((void*)argAddress, (userptr_t)addrStart, vaddrSize); 
+		int copyArgAddress = copyout((void*) &argAddress, (userptr_t)addrStart, vaddrSize); 
 		if(copyArgAddress != 0){
 			return ENOMEM; 
 		}
@@ -454,10 +455,12 @@ int as_define_stack_new(struct addrspace *as, vaddr_t *stackptr, char** kernelAr
 	//put null at the last addrSize 
 	int nullPtr = 0; 
 	int copyNull = copyout((void *)&nullPtr, (userptr_t)addrStart, vaddrSize); 
-	
 	if(copyNull != 0){
 		return ENOMEM; 
 	}
+	
+	kfree(stackArgAddr);
+
 	return 0;
 }
 
