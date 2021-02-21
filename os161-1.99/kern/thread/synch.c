@@ -40,6 +40,8 @@
 #include <current.h>
 #include <synch.h>
 
+#include "opt-A2.h"
+
 ////////////////////////////////////////////////////////////
 //
 // Semaphore.
@@ -133,6 +135,7 @@ void V(struct semaphore *sem){
 	spinlock_release(&sem->sem_lock);
 }
 
+#if OPT_A2
 ////////////////////////////////////////////////////////////
 //
 // Lock.
@@ -299,3 +302,111 @@ void cv_broadcast(struct cv *cv, struct lock *lock){
 	// wake all threads
 	wchan_wakeall(cv->cv_wchan); 
 }
+
+/* ============================================================== OLD CODE ============================================================== */
+
+#else
+////////////////////////////////////////////////////////////
+//
+// Lock.
+
+struct lock *lock_create(const char *name){
+	struct lock *lock;
+
+	lock = kmalloc(sizeof(struct lock));
+	if (lock == NULL) {
+					return NULL;
+	}
+
+	lock->lk_name = kstrdup(name);
+	if (lock->lk_name == NULL) {
+					kfree(lock);
+					return NULL;
+	}
+	
+	// add stuff here as needed
+	
+	return lock;
+}
+
+void lock_destroy(struct lock *lock){
+	KASSERT(lock != NULL);
+
+	// add stuff here as needed
+	
+	kfree(lock->lk_name);
+	kfree(lock);
+}
+
+void lock_acquire(struct lock *lock){
+	// Write this
+
+	(void)lock;  // suppress warning until code gets written
+}
+
+void lock_release(struct lock *lock){
+	// Write this
+
+	(void)lock;  // suppress warning until code gets written
+}
+
+bool lock_do_i_hold(struct lock *lock){
+	// Write this
+
+	(void)lock;  // suppress warning until code gets written
+
+	return true; // dummy until code gets written
+}
+
+////////////////////////////////////////////////////////////
+//
+// CV
+
+
+struct cv * cv_create(const char *name){
+	struct cv *cv;
+
+	cv = kmalloc(sizeof(struct cv));
+	if (cv == NULL) {
+					return NULL;
+	}
+
+	cv->cv_name = kstrdup(name);
+	if (cv->cv_name==NULL) {
+					kfree(cv);
+					return NULL;
+	}
+	
+	// add stuff here as needed
+	
+	return cv;
+}
+
+void cv_destroy(struct cv *cv){
+	KASSERT(cv != NULL);
+
+	// add stuff here as needed
+	
+	kfree(cv->cv_name);
+	kfree(cv);
+}
+
+void cv_wait(struct cv *cv, struct lock *lock){
+	// Write this
+	(void)cv;    // suppress warning until code gets written
+	(void)lock;  // suppress warning until code gets written
+}
+
+void cv_signal(struct cv *cv, struct lock *lock){
+	// Write this
+	(void)cv;    // suppress warning until code gets written
+	(void)lock;  // suppress warning until code gets written
+}
+
+void cv_broadcast(struct cv *cv, struct lock *lock){
+	// Write this
+	(void)cv;    // suppress warning until code gets written
+	(void)lock;  // suppress warning until code gets written
+}
+
+#endif /* OPT_A2 */
