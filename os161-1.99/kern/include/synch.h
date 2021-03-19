@@ -40,6 +40,7 @@
 #include <spinlock.h>
 
 #include "opt-A2.h"
+
 /*
  * Dijkstra-style semaphore.
  *
@@ -148,7 +149,6 @@ void cv_destroy(struct cv *);
 void cv_wait(struct cv *cv, struct lock *lock);
 void cv_signal(struct cv *cv, struct lock *lock);
 void cv_broadcast(struct cv *cv, struct lock *lock);
-#endif /* _SYNCH_H_ */ 
 
 /* ================================================= OLD CODE ================================================= */
 
@@ -233,7 +233,6 @@ void cv_wait(struct cv *cv, struct lock *lock);
 void cv_signal(struct cv *cv, struct lock *lock);
 void cv_broadcast(struct cv *cv, struct lock *lock);
 
+#endif /* OPT_A2 */
 
 #endif /* _SYNCH_H_ */
-
-#endif /* OPT_A2 */

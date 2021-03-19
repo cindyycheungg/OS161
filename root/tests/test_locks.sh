@@ -12,6 +12,6 @@ done
 
 echo $( grep -c 'Lock test done' lock_test.output ) completed successfully!
 
-rm lock_test.output
+#rm lock_test.output
 
 echo test completed

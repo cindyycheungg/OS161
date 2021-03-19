@@ -12,7 +12,6 @@ done
 
 echo $( grep -c -F 'Operation' getpid-test.output ) completed successfully!
 
-rm getpid-test.output
+#rm getpid-test.output
 
 echo test completed
-

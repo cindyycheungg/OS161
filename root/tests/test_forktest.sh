@@ -12,6 +12,6 @@ done
 
 echo $( grep -c -F 'Operation' forktest-test.output ) completed successfully!
 
-rm forktest-test.output
+#rm forktest-test.output
 
 echo test completed

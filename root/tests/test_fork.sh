@@ -12,6 +12,6 @@ done
 
 echo $( grep -c -F 'Operation' onefork-test.output ) completed successfully!
 
-rm onefork-test.output
+#rm onefork-test.output
 
 echo test completed

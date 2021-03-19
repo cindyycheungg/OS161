@@ -12,6 +12,6 @@ done
 
 echo $( grep -c 'CV test done' cv_test.output ) completed successfully!
 
-rm cv_test.output
+#rm cv_test.output
 
 echo test completed

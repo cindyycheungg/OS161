@@ -12,6 +12,6 @@ done
 
 echo $( grep -c -F 'Operation' widefork-test.output ) completed successfully!
 
-rm widefork-test.output
+#rm widefork-test.output
 
 echo test completed
