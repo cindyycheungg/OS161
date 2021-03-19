@@ -39,12 +39,14 @@
 #include <vm.h>
 
 #include "opt-A2.h"
+#include "opt-A3.h"
 
 #if OPT_A2
 
 #include <copyinout.h>
 
 #endif
+
 
 /*
  * Dumb MIPS-only "VM system" that is intended to only be just barely
@@ -112,9 +114,7 @@ vm_tlbshootdown(const struct tlbshootdown *ts)
 	panic("dumbvm tried to do tlb shootdown?!\n");
 }
 
-int
-vm_fault(int faulttype, vaddr_t faultaddress)
-{
+int vm_fault(int faulttype, vaddr_t faultaddress){
 	vaddr_t vbase1, vtop1, vbase2, vtop2, stackbase, stacktop;
 	paddr_t paddr;
 	int i;
@@ -127,9 +127,18 @@ vm_fault(int faulttype, vaddr_t faultaddress)
 	DEBUG(DB_VM, "dumbvm: fault: 0x%x\n", faultaddress);
 
 	switch (faulttype) {
-	    case VM_FAULT_READONLY:
-		/* We always create pages read-write, so we can't get this */
-		panic("dumbvm: got VM_FAULT_READONLY\n");
+
+			#if OPT_A3 
+				case VM_FAULT_READONLY:
+					// trying to write to read only memory - need to return error code 
+					// return that operation is not
+					return EPERM; 
+			#else
+				case VM_FAULT_READONLY:
+					/* We always create pages read-write, so we can't get this */
+					panic("dumbvm: got VM_FAULT_READONLY\n");
+			#endif 
+			
 	    case VM_FAULT_READ:
 	    case VM_FAULT_WRITE:
 		break;
@@ -176,8 +185,16 @@ vm_fault(int faulttype, vaddr_t faultaddress)
 	stackbase = USERSTACK - DUMBVM_STACKPAGES * PAGE_SIZE;
 	stacktop = USERSTACK;
 
+	#if OPT_A3
+		bool codeSeg = false; 
+	#endif
+
 	if (faultaddress >= vbase1 && faultaddress < vtop1) {
 		paddr = (faultaddress - vbase1) + as->as_pbase1;
+		//we are in the code segment 
+		#if OPT_A3
+			codeSeg = true; 
+		#endif
 	}
 	else if (faultaddress >= vbase2 && faultaddress < vtop2) {
 		paddr = (faultaddress - vbase2) + as->as_pbase2;
@@ -202,15 +219,33 @@ vm_fault(int faulttype, vaddr_t faultaddress)
 		}
 		ehi = faultaddress;
 		elo = paddr | TLBLO_DIRTY | TLBLO_VALID;
+		
+		#if OPT_A3
+			if(codeSeg && as->as_loaded){
+				//turn elo dirty off 
+				elo &= ~TLBLO_DIRTY; 
+			}
+		#endif
+
 		DEBUG(DB_VM, "dumbvm: 0x%x -> 0x%x\n", faultaddress, paddr);
 		tlb_write(ehi, elo, i);
 		splx(spl);
 		return 0;
 	}
 
-	kprintf("dumbvm: Ran out of TLB entries - cannot handle page fault\n");
-	splx(spl);
-	return EFAULT;
+	#if OPT_A3
+		ehi = faultaddress;
+		elo = paddr | TLBLO_DIRTY | TLBLO_VALID;
+		tlb_random(ehi, elo); 
+		splx(spl);
+		return 0; 
+	
+	#else
+		kprintf("dumbvm: Ran out of TLB entries - cannot handle page fault\n");
+		splx(spl);
+		return EFAULT;
+	#endif /* OPT A3 */
+	
 }
 
 struct addrspace *
@@ -228,6 +263,10 @@ as_create(void)
 	as->as_pbase2 = 0;
 	as->as_npages2 = 0;
 	as->as_stackpbase = 0;
+	
+	#if OPT_A3
+		as->as_loaded = false; 
+	#endif
 
 	return as;
 }

@@ -60,6 +60,8 @@
 #include <vnode.h>
 #include <elf.h>
 
+#include "opt-A3.h"
+
 /*
  * Load a segment at virtual address VADDR. The segment in memory
  * extends from VADDR up to (but not including) VADDR+MEMSIZE. The
@@ -150,9 +152,7 @@ load_segment(struct addrspace *as, struct vnode *v,
  *
  * Returns the entry point (initial PC) for the program in ENTRYPOINT.
  */
-int
-load_elf(struct vnode *v, vaddr_t *entrypoint)
-{
+int load_elf(struct vnode *v, vaddr_t *entrypoint){
 	Elf_Ehdr eh;   /* Executable header */
 	Elf_Phdr ph;   /* "Program header" = segment header */
 	int result, i;
@@ -302,6 +302,13 @@ load_elf(struct vnode *v, vaddr_t *entrypoint)
 	}
 
 	*entrypoint = eh.e_entry;
-
+	
+	#if OPT_A3
+			// flag indicated the loadelf is done 
+			as->as_loaded = true; 
+			// flush TLB 
+			as_activate(); 
+	#endif
+	
 	return 0;
 }

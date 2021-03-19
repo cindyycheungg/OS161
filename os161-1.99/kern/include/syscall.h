@@ -28,6 +28,7 @@
  */
 
 #include "opt-A2.h"
+#include "opt-A3.h"
 
 #ifndef _SYSCALL_H_
 #define _SYSCALL_H_
@@ -83,5 +84,9 @@ int sys___time(userptr_t user_seconds, userptr_t user_nanoseconds);
 	int sys_execv(userptr_t program, userptr_t arguments);
 
 #endif /* OPT_A2 */
+
+#if OPT_A3
+	void sys_kill(int exitcode);
+#endif 
 
 #endif /* _SYSCALL_H_ */

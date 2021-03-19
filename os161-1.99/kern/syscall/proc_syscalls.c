@@ -11,6 +11,7 @@
 #include <copyinout.h>
 
 #include "opt-A2.h"
+#include "opt-A3.h"
 
 #if OPT_A2
 
@@ -123,7 +124,7 @@ int sys_waitpid(pid_t pid, userptr_t status, int options, pid_t *retval){
     childExitCode = targetChild->exitCode; 
 
     //combine these two into one using macro 
-    exitstatus = _MKWAIT_EXIT(childExitCode); 
+    exitstatus = childExitCode; 
 
     //call proc_destroy() to fully delete the child
     proc_destroy(targetChild);
@@ -147,7 +148,7 @@ int sys_waitpid(pid_t pid, userptr_t status, int options, pid_t *retval){
     childExitCode = targetChild->exitCode; 
 
     //combine these two into one using macro 
-    exitstatus = _MKWAIT_EXIT(childExitCode); 
+    exitstatus = childExitCode; 
 
     //call proc_destroy() to fully delete the child
     proc_destroy(targetChild);
@@ -205,7 +206,7 @@ void sys__exit(int exitcode) {
     
     //set the child's exit code, and signal parent that you're done shit 
     lock_acquire(p->procLock);
-      p->exitCode = exitcode; 
+      p->exitCode = _MKWAIT_EXIT(exitcode); 
       // set isAlive to false cause you've exited 
       p->isAlive = false; 
       cv_signal(p->procCv, p->procLock); 
@@ -442,3 +443,54 @@ int sys_execv(userptr_t program, userptr_t arguments){
   }
 
 #endif /* OPT_A2 */
+
+#if OPT_A3
+  void sys_kill(int exitcode) {
+  
+    struct addrspace *as;
+    struct proc *p = curproc;
+
+    DEBUG(DB_SYSCALL,"Syscall: _exit(%d)\n",exitcode);
+
+    KASSERT(curproc->p_addrspace != NULL);
+    as_deactivate();
+    /*
+    * clear p_addrspace before calling as_destroy. Otherwise if
+    * as_destroy sleeps (which is quite possible) when we
+    * come back we'll be calling as_activate on a
+    * half-destroyed address space. This tends to be
+    * messily fatal.
+    */
+    as = curproc_setas(NULL);
+    as_destroy(as); 
+
+    /* detach this thread from its process */
+    /* note: curproc cannot be used after this call */
+    proc_remthread(curthread);
+
+    //check if parent is alive
+
+    //if parent is alive  
+    if(p->parent != NULL && p->parent->isAlive == true){
+      
+      //set the child's exit code, and signal parent that you're done shit 
+      lock_acquire(p->procLock);
+        p->exitCode = _MKWAIT_SIG(exitcode); 
+        // set isAlive to false cause you've exited 
+        p->isAlive = false; 
+        cv_signal(p->procCv, p->procLock); 
+      lock_release(p->procLock); 
+      
+    }
+    
+    //if the parent is not alive or is null pointer 
+    else if(p->parent == NULL || p->parent->isAlive == false){
+      //after dealing with children, kms 
+      proc_destroy(p); 
+    }
+
+    thread_exit();
+    /* thread_exit() does not return, so we should never get here */
+    panic("return from thread_exit in sys_exit\n");
+  }
+#endif
