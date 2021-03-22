@@ -47,6 +47,12 @@
 
 #endif
 
+#if OPT_A3
+
+#include <synch.h>
+
+#endif
+
 
 /*
  * Dumb MIPS-only "VM system" that is intended to only be just barely
@@ -61,55 +67,142 @@
  */
 static struct spinlock stealmem_lock = SPINLOCK_INITIALIZER;
 
-void
-vm_bootstrap(void)
-{
-	/* Do nothing. */
-}
+#if OPT_A3
 
-static
-paddr_t
-getppages(unsigned long npages)
-{
+struct lock * coreMapLock;
+bool coreMapInitialized = false; 
+paddr_t coreMapStart; 
+paddr_t firstFrame; 
+int totalEntries = 0; 
+
+#endif
+
+#if OPT_A3
+	void vm_bootstrap(void){
+		coreMapLock = lock_create("coreMapLock");
+		//start to create the core map 
+
+		// 1. call ram_getsize to get thre remaining physical memeory in the system 
+		paddr_t high, low; 
+		
+		lock_acquire(coreMapLock);
+			ram_getsize(&low, &high);
+			coreMapStart = low; 
+			//2. Partition remaining mem into fixed size frames 
+			paddr_t remainingMem = high - low; 
+			// calculate size of coremap - 1 entry per frame 
+			int coreMapSize = sizeof(int) * remainingMem/PAGE_SIZE; 
+
+			totalEntries = remainingMem/PAGE_SIZE; 
+
+			firstFrame = ROUNDUP(low + coreMapSize, PAGE_SIZE); 
+
+			//store coremap
+			for(int i = 0; i < coreMapSize; i++){
+				*(int *) PADDR_TO_KVADDR(low) = 0; 
+				low += sizeof(int); 
+			}
+
+			//pad with 0's of coremap size is less than framesize 
+			while(low < firstFrame){
+				*(int *) PADDR_TO_KVADDR(low) = 0; 
+				low += sizeof(int); 
+			}
+			coreMapInitialized = true; 
+		lock_release(coreMapLock); 
+	}
+#else
+	void vm_bootstrap(void){
+		/* Do nothing. */
+	}
+#endif
+
+static paddr_t getppages(unsigned long npages){
 	paddr_t addr;
 
-	spinlock_acquire(&stealmem_lock);
-
-	addr = ram_stealmem(npages);
-	
-	spinlock_release(&stealmem_lock);
-	return addr;
+	#if OPT_A3
+		if(!coreMapInitialized){
+			spinlock_acquire(&stealmem_lock);
+				addr = ram_stealmem(npages);
+			spinlock_release(&stealmem_lock);
+		}
+		else{ //use the coremap 
+			lock_acquire(coreMapLock); 
+				//iterate through coremap and look for consecutive npages of 0's 
+				unsigned long zeroCount = 0; 
+				paddr_t chainStart; 
+				bool setAddress = false; 
+				for(int i = 0; i < totalEntries; i++){
+					if(zeroCount == npages){
+						//go through entries and mark as 1, 2, 3...
+						for(unsigned int j = 1; j <= npages; j++){
+							*(int *) PADDR_TO_KVADDR(chainStart) = j; 
+							chainStart += sizeof(int); 
+						}
+						addr = firstFrame + (PAGE_SIZE * (i - npages));
+						setAddress = true; 
+						break; 
+					}
+					else{
+						if(*(int *)PADDR_TO_KVADDR(coreMapStart + (i * sizeof(int))) == 0){
+							if(zeroCount == 0){
+								chainStart = coreMapStart + (i * sizeof(int)); 
+							}
+							zeroCount += 1; 
+						}
+						else{
+							zeroCount = 0; 
+						}
+					}
+				}
+				if(setAddress == false){
+					addr = 0;
+				}
+			lock_release(coreMapLock);
+		}
+		return addr; 
+	#else
+		spinlock_acquire(&stealmem_lock);
+			addr = ram_stealmem(npages);
+		spinlock_release(&stealmem_lock);
+		return addr;
+	#endif
 }
 
 /* Allocate/free some kernel-space virtual pages */
-vaddr_t 
-alloc_kpages(int npages)
-{
+vaddr_t alloc_kpages(int npages){
 	paddr_t pa;
 	pa = getppages(npages);
-	if (pa==0) {
+	if (pa == 0) {
 		return 0;
 	}
 	return PADDR_TO_KVADDR(pa);
 }
 
-void 
-free_kpages(vaddr_t addr)
-{
-	/* nothing - leak the memory. */
+void free_kpages(vaddr_t addr){
+	#if OPT_A3
+		lock_acquire(coreMapLock);
+			vaddr_t diff = addr - PADDR_TO_KVADDR(firstFrame); 
+			int index = diff / PAGE_SIZE; 
 
-	(void)addr;
+			*(int *)PADDR_TO_KVADDR(coreMapStart + (index*sizeof(int))) = 0; 
+			index += 1; 
+
+			while(*(int *)PADDR_TO_KVADDR(coreMapStart + (index*sizeof(int))) > 1){
+				*(int *)PADDR_TO_KVADDR(coreMapStart + (index*sizeof(int))) = 0; 
+				index += 1;
+			}
+		lock_release(coreMapLock); 
+	#else
+		(void)addr; 
+	#endif
 }
 
-void
-vm_tlbshootdown_all(void)
-{
+void vm_tlbshootdown_all(void){
 	panic("dumbvm tried to do tlb shootdown?!\n");
 }
 
-void
-vm_tlbshootdown(const struct tlbshootdown *ts)
-{
+void vm_tlbshootdown(const struct tlbshootdown *ts){
 	(void)ts;
 	panic("dumbvm tried to do tlb shootdown?!\n");
 }
@@ -127,12 +220,11 @@ int vm_fault(int faulttype, vaddr_t faultaddress){
 	DEBUG(DB_VM, "dumbvm: fault: 0x%x\n", faultaddress);
 
 	switch (faulttype) {
-
 			#if OPT_A3 
 				case VM_FAULT_READONLY:
 					// trying to write to read only memory - need to return error code 
-					// return that operation is not
-					return EPERM; 
+					// return bad memory reference
+					return EFAULT; 
 			#else
 				case VM_FAULT_READONLY:
 					/* We always create pages read-write, so we can't get this */
@@ -271,9 +363,13 @@ as_create(void)
 	return as;
 }
 
-void
-as_destroy(struct addrspace *as)
-{
+void as_destroy(struct addrspace *as){
+
+	#if OPT_A3
+		free_kpages((vaddr_t)PADDR_TO_KVADDR(as->as_pbase1)); 
+		free_kpages((vaddr_t)PADDR_TO_KVADDR(as->as_pbase2)); 
+		free_kpages((vaddr_t)PADDR_TO_KVADDR(as->as_stackpbase)); 
+	#endif 
 	kfree(as);
 }
 

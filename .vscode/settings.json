@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "errno.h": "c",
+    "synch.h": "c",
+    "spinlock.h": "c"
+  }
+}
