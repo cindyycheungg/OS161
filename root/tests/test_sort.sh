@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-readonly TESTCOUNT=30
+readonly TESTCOUNT=100
 echo Attempting to perform $TESTCOUNT tests!
 readonly testString="p testbin/sort;"
 STRING=""

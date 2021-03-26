@@ -421,9 +421,17 @@ void as_destroy(struct addrspace *as){
 			freeAddr = (paddr_t)array_get(as->stackpbase_pt, i); 	
 			free_kpages((vaddr_t)PADDR_TO_KVADDR(freeAddr));
 		}
-		kfree(as->pbase1_pt); 
-		kfree(as->pbase2_pt); 
-		kfree(as->stackpbase_pt); 
+		//arrary cleanup requires array to be empty 
+		array_setsize(as->pbase1_pt, 0);
+		array_setsize(as->pbase2_pt, 0);
+		array_setsize(as->stackpbase_pt, 0);
+
+		//destroy array 
+		array_destroy(as->pbase1_pt); 
+		array_destroy(as->pbase2_pt); 
+		array_destroy(as->stackpbase_pt); 
+
+		lock_destroy(as->asLock); 
 	
 	#endif 
 	kfree(as);

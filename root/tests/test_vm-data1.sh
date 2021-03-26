@@ -12,6 +12,6 @@ done
 
 echo $( grep -c 'SUCCEEDED' vm-data1.output ) completed successfully!
 
-rm vm-data1.output
+#rm vm-data1.output
 
 echo test completed
